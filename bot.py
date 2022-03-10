@@ -34,7 +34,7 @@ subreddit = reddit.subreddit(reddit_subreddit)
 # Telegram
 def send_message(message):
     message_params["text"] = message
-    requests.get(f"https://api.telegram.org/bot{telegram_auth_token}/sendMessage", params=params)
+    requests.get(f"https://api.telegram.org/bot{telegram_auth_token}/sendMessage", params=message_params)
 
 # New posts stream
 for submission in subreddit.stream.submissions():
