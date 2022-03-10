@@ -16,7 +16,7 @@ telegram_group_id = config.telegram['group_id']
 
 bot_launch_time = time.time()
 
-# Messages parameters
+# Messages parameters, used so telegram doesn't get confused with '&'
 message_params = {
     "chat_id": telegram_group_id,
     "text": "",
