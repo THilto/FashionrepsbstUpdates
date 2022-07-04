@@ -44,6 +44,3 @@ for submission in subreddit.stream.submissions():
             print(f"New Post: {submission.title}")
             send_message(f"Post: {submission.title} \n"
             f"Link: reddit.com{submission.permalink}")
-
-
-messageBot.run_4ever(auto_reconnect=True)
